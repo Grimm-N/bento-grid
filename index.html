@@ -2,41 +2,93 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Bento grid</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <!-- styles -->
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="media.css">
+  <!-- favicon Grimm -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/grimm-favicon-white.webp">
+  <!-- title -->
+  <title>Bento grid by Natali Grimm</title>
 </head>
 <body>
+  <!-- bento container -->
+  <div class="bento">
 
-  Social Media 10x Faster with AI
-  Over 4,000 5-star reviews
+    <!-- item 1 -->
+    <div class="bento__item bento__item--small bento__item--purple bento__item--center">
+      <h1 class="item__title">Social Media <span>10x</span> <em>Faster</em> with AI</h1>
+      <div class="item__image">
+        <img src="./images/illustration-five-stars.webp" alt="five yellow stars">
+        <p сдфыы="item__text">Over 4,000 5-star reviews</p>
+      </div>
+    </div>
 
-  Manage multiple accounts and platforms.
+    <!-- item 2 -->
+    <div class="bg-white col-start-2 row-start-2 row-span-2 rounded-[0.5rem] p-6 pr-0">
+      <div class="item__illustration">
+        <img src="./images/illustration-multiple-platforms.webp" alt="">
+      </div>
+      <h2 class="font-medium text-black">Manage multiple accounts and platforms.</h2>
+    </div>
 
-  Maintain a consistent posting schedule.
+    <!-- item 3 -->
+    <div class="bg-yellow-500 col-start-3 row-start-2 row-span-2 rounded-[0.5rem] p-6 pb-0">
+      <h2 class="font-medium text-black">Maintain a consistent posting schedule.</h2>
+      <div class="item__illustration">
+        <img src="./images/illustration-consistent-schedule.webp" alt="">
+      </div>
+    </div>
 
-  Schedule to social media.
-  Optimize post timings to publish content at the perfect time for your audience.
+    <!-- item 4 -->
+    <div class="bg-purple-100 col-start-4 row-start-1 row-span-3 rounded-[0.5rem] p-8 pr-0">
+      <h2 class="font-medium text-black">Schedule to social media.</h2>
+      <div class="item__illustration">
+        <img src="./images/illustration-schedule-posts.webp" alt="">
+      </div>
+      <p>Optimize post timings to publish content at the perfect time for your audience.</p>
+    </div>
+
+    <!-- item 5 -->
+    <div class="bg-purple-500 col-start-3 col-span-2 row-start-4 rounded-[0.5rem] p-6">
+      <div class="item__illustration">
+        <img src="./images/illustration-grow-followers.webp" alt="">
+      </div>
+      <h2 class="font-medium">Grow followers with non-stop content.</h2>
+    </div>
+
+    <!-- item 6 -->
+    <div class="bg-white col-start-2 row-start-4 rounded-[0.5rem] p-6">
+      <h2 class="font-medium text-black">>56%</h2>
+      <p>faster audience growth</p>
+      <div class="item__illustration">
+        <img src="./images/illustration-audience-growth.webp" alt="">
+      </div>
+    </div>
+
+    <!-- item 7 -->
+    <div class="bg-yellow-100 col-start-1 row-start-1 row-span-2 rounded-[0.5rem] p-8">
+      <h2 class="font-medium text-black">Create and schedule content <span class="text-purple-500 italic">quicker.</span></h2>
+      <div class="item__illustration">
+        <img src="./images/illustration-create-post.webp" alt="">
+      </div>
+    </div>
+
+    <!-- item 8 -->
+    <div class="bg-yellow-500 col-start-1 row-start-3 row-span-2 rounded-[0.5rem] p-6 pr-3">
+      <h2 class="font-medium text-[2.5rem] text-black tracking-tighter leading-9">Write your content using AI.</h2>
+      <div class="item__illustration">
+        <img src="./images/illustration-ai-content.webp" alt="">
+      </div>
+    </div>
+
+  </div> <!-- Bento eaten and closed ^_^ -->
   
-  Grow followers with non-stop content.
-
-  >56% faster audience growth
-  
-  Create and schedule content quicker.
-
-  Write your content using AI.
-  
-  <div class="attribution">
+  <!-- footer hidden just in case =) -->
+  <footer class="hidden">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+    Coded by <a href="#https://github.com/Grimm-N">Natali Grimm</a>.
+  </footer>
 </body>
 </html>
