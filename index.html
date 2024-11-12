@@ -5,86 +5,89 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
   <!-- styles -->
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="media.css">
+
   <!-- favicon Grimm -->
   <link rel="icon" type="image/png" sizes="32x32" href="./images/grimm-favicon-white.webp">
   <!-- title -->
   <title>Bento grid by Natali Grimm</title>
 </head>
-<body class="h-screen w-screen overflow-scroll flex items-center justify-center bg-black font-custom">
+<body>
   <!-- bento container -->
-  <div class="grid grid-cols-[21.44rem] gap-x-8 gap-y-8 h-auto lg:grid-cols-[16rem_16rem_16rem_16rem] lg:grid-rows-[20.25rem_3.75rem_9.75rem_15.375rem] lg:max-w-[1120px] lg:max-h-[882px] lg:w-full">
+  <div class="bento">
 
     <!-- item 1 -->
-    <div class="bg-purple-500 lg:col-start-2 lg:col-span-2 lg:row-start-1 rounded-[0.5rem]">
-      <h1 class="">Social Media <span>10x</span> <em>Faster</em> with AI</h1>
-      <div class="">
-        <img src="./images/illustration-five-stars.webp" alt="five yellow stars">
-        <p сдфыы="">Over 4,000 5-star reviews</p>
+    <div class="bento__item bento__item--1 text__center">
+      <h1 class="item__title item__title--large">Social Media <span>10x</span> <em>Faster</em> with AI</h1>
+      <div class="item__image image__center">
+        <img class="image__stars" src="./images/illustration-five-stars.webp" alt="five yellow stars">
+        <p class="item__text">Over 4,000 5-star reviews</p>
       </div>
     </div>
 
     <!-- item 2 -->
-    <div class="bg-white lg:col-start-2 lg:row-start-2 lg:row-span-2 rounded-[0.5rem]">
-      <div class="">
-        <img src="./images/illustration-multiple-platforms.webp" alt="">
+    <div class="bento__item bento__item--2 text__left">
+      <div class="item__overflow">
+        <img class="image__platform" src="./images/illustration-multiple-platforms.webp" alt="social icons">
       </div>
-      <h2 class="">Manage multiple accounts and platforms.</h2>
+      <h2 class="item__title item__title--small">Manage multiple accounts and platforms.</h2>
     </div>
 
     <!-- item 3 -->
-    <div class="bg-yellow-500 lg:col-start-3 lg:row-start-2 lg:row-span-2 rounded-[0.5rem] p-6 pb-0">
-      <h2 class="item__title--small">Maintain a consistent posting schedule.</h2>
-      <div class="item__illustration">
-        <img src="./images/illustration-consistent-schedule.webp" alt="">
+    <div class="bento__item bento__item--3 text__left">
+      <h2 class="item__title item__title--small">Maintain a consistent posting schedule.</h2>
+      <div class="item__image image__left">
+        <img class="image__calendar" src="./images/illustration-consistent-schedule.webp" alt="calendar illustration">
       </div>
     </div>
 
     <!-- item 4 -->
-    <div class="bg-purple-100 lg:col-start-4 lg:row-start-1 lg:row-span-3 rounded-[0.5rem] p-8 pr-0">
-      <h2 class="font-medium text-black">Schedule to social media.</h2>
-      <div class="item__illustration">
+    <div class="bento__item bento__item--4 text__center">
+      <h2 class="item__title item__title--small">Schedule to social media.</h2>
+      <div class="item__image image__center image__schedule">
         <img src="./images/illustration-schedule-posts.webp" alt="">
       </div>
-      <p>Optimize post timings to publish content at the perfect time for your audience.</p>
+      <p class="item__text">Optimize post timings to publish content at the perfect time for your audience.</p>
     </div>
 
     <!-- item 5 -->
-    <div class="bg-purple-500 lg:col-start-3 lg:col-span-2 lg:row-start-4 rounded-[0.5rem] p-6">
-      <div class="item__illustration">
-        <img src="./images/illustration-grow-followers.webp" alt="">
+    <div class="bento__item bento__item--5 text__center">
+      <div class="item__image image__center">
+        <img class="image__grow" src="./images/illustration-grow-followers.webp" alt="">
       </div>
-      <h2 class="font-medium">Grow followers with non-stop content.</h2>
+      <h2 class="item__title item__title--medium">Grow followers with non-stop content.</h2>
     </div>
 
     <!-- item 6 -->
-    <div class="bg-white lg:col-start-2 lg:row-start-4 rounded-[0.5rem] p-6">
-      <h2 class="font-medium text-black">>56%</h2>
-      <p>faster audience growth</p>
-      <div class="item__illustration">
-        <img src="./images/illustration-audience-growth.webp" alt="">
+    <div class="bento__item bento__item--6 text__left">
+      <h2 class="item__title item__title--large">>56%</h2>
+      <p class="item__text">faster audience growth</p>
+      <div class="item__image image__left">
+        <img class="image__emoji" src="./images/illustration-audience-growth.webp" alt="emoji">
       </div>
     </div>
 
     <!-- item 7 -->
-    <div class="bg-yellow-100 lg:col-start-1 lg:row-start-1 lg:row-span-2 rounded-[0.5rem] p-8">
-      <h2 class="font-medium text-black">Create and schedule content <span class="text-purple-500 italic">quicker.</span></h2>
-      <div class="item__illustration">
-        <img src="./images/illustration-create-post.webp" alt="">
+    <div class="bento__item bento__item--7 text__left">
+      <h2 class="item__title item__title--medium">Create and schedule content <em>quicker.</em></h2>
+      <div class="item__image image__left">
+        <img class="image__post" src="./images/illustration-create-post.webp" alt="">
       </div>
     </div>
 
     <!-- item 8 -->
-    <div class="bg-yellow-500 lg:col-start-1 lg:row-start-3 lg:row-span-2 rounded-[0.5rem] p-6 pr-3">
-      <h2 class="font-medium text-[2.5rem] text-black tracking-tighter leading-9">Write your content using AI.</h2>
-      <div class="item__illustration">
-        <img src="./images/illustration-ai-content.webp" alt="">
+    <div class="bento__item bento__item--8 text__left">
+      <h2 class="item__title item__title--medium">Write your content using AI.</h2>
+      <div class="item__image image__left">
+        <img class="image__ai" src="./images/illustration-ai-content.webp" alt="">
       </div>
     </div>
 
   </div> <!-- Bento eaten and closed ^_^ -->
   
   <!-- footer hidden just in case =) -->
-  <footer class="hidden">
+  <footer class="footer">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
     Coded by <a href="#https://github.com/Grimm-N">Natali Grimm</a>.
   </footer>
