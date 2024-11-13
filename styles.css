@@ -1,8 +1,8 @@
 /* font */
 @font-face {
   font-family: 'DMSans';
-  src: url('/fonts/DMSans-VariableFont_opsz\,wght.woff2') format('woff2'), 
-         url('/fonts/DMSans-VariableFont_opsz\,wght.woff') format('woff'),
+  src: url('/fonts/DMSans-VariableFont_opsz\,wght.woff') format('woff'), 
+         url('/fonts/DMSans-VariableFont_opsz\,wght.woff2') format('woff2'),
          url('/fonts/DMSans-VariableFont_opsz\,wght.ttf') format('truetype');
 }
 
@@ -24,7 +24,7 @@ body {
   font-weight: 400;
   font-size: 1.125rem;
   color: var(--black);
-  background-color: black;
+  background-color: rgb(0, 0, 0);
   min-height: 100vh;
   width: 100vw;
 }
@@ -42,9 +42,19 @@ body {
   display: flex;
   flex-direction: column;
   border-radius: 0.5rem;
+  filter: invert(100%);
   width: 100%;
   height: 100%;
   overflow: hidden;
+  cursor: pointer;
+  transition: all 0.3s;
+  position: relative;
+  box-shadow: 0 0.5rem 1.2rem rgba(0, 0, 0, 0.7),
+              0 -0.5rem 1.2rem rgba(151, 31, 178, 0.7);
+}
+
+.bento__item:hover, .bento__item.active {
+  transform: scale(1.05); 
 }
 
 .bento__item--1 {
@@ -205,4 +215,43 @@ body {
 
 .footer {
   display: none;
+}
+
+/* BG */
+.background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: -1;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.out-top {
+    animation: rotate 20s linear infinite;
+    transform-origin: 13px 25px;
+}
+
+.in-top {
+    animation: rotate 10s linear infinite;
+    transform-origin: 13px 25px;
+}
+
+.out-bottom {
+    animation: rotate 25s linear infinite;
+    transform-origin: 84px 93px;
+}
+
+.in-bottom {
+    animation: rotate 15s linear infinite;
+    transform-origin: 84px 93px;
 }
