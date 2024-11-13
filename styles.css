@@ -25,7 +25,8 @@ body {
   font-size: 1.125rem;
   color: var(--black);
   background-color: rgb(0, 0, 0);
-  min-height: 100vh;
+  height: 100vh;
+  min-height: 64.37rem;
   width: 100vw;
 }
 
