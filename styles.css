@@ -1,9 +1,9 @@
 /* font */
 @font-face {
   font-family: 'DMSans';
-  src: url('/fonts/DMSans-VariableFont_opsz\,wght.woff') format('woff'), 
-         url('/fonts/DMSans-VariableFont_opsz\,wght.woff2') format('woff2'),
-         url('/fonts/DMSans-VariableFont_opsz\,wght.ttf') format('truetype');
+  src: url('./fonts/DMSans-Italic-VariableFont_opsz\,wght.woff') format('woff'), 
+         url('./fonts/DMSans-Italic-VariableFont_opsz\,wght.woff2') format('woff2'),
+         url('./fonts/DMSans-VariableFont_opsz\,wght.ttf') format('truetype');
 }
 
 /* colors */
